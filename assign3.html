@@ -1,0 +1,260 @@
+<html>
+    <head>
+        <title>products</title>
+        <style>
+             #mainTitle{
+                text-align:center;
+                font-size: 35px;
+                color:rgb(255, 255, 255);
+                margin-bottom: 2px;
+                background:pink;
+                margin-top:2px;
+                animation: move 2s infinite alternate, colorSwap 2s infinite alternate;
+            }
+            @keyframes move{
+                from {transform: translateX(0);}
+                to {transform: translateY(50px);}
+            }
+            @keyframes colorSwap{
+                0%{
+                    color:#e6a8c3;
+                    background:#8F4E5C;
+                }
+                100%{
+                    color:#8F4E5C;
+                    background:#e6a8c3;
+                }
+            }
+            .card{
+                width: 300px;
+                height: 550px;
+                padding:20px;
+                margin: 20px;
+                margin-top:100px;
+                border-radius: 12px;
+                background: rgb(255, 255, 255);
+                box-shadow: 0 0 10px rgba(241, 139, 200, 0.805);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                box-sizing: border-box;
+                text-align:left;
+                position: relative;
+            }
+            .image{
+                width: 80%;
+                height: 230px;
+                border-radius: 10px;
+                object-fit: cover;
+                display: block;
+                margin: 0 auto;
+            }
+            .buy{
+                margin-top: 20px;
+                padding: 10px 20px;
+                background:#e6a8c3;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .container1{
+                display:flex;
+                justify-content:center;
+                gap: 40px;
+            }
+
+            body {
+                background: linear-gradient(to bottom right, #ffb6c1, #ffffff);
+                background-attachment: fixed;
+                background-size: cover;
+                margin: 0;
+            }
+            .sticky-top-btn {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #8F4E5C;
+    color: white;
+    padding: 20px 0;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search-box {
+    background: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 6px;
+    width: 200px;
+    font-size: 14px;
+}
+
+.search-box button {
+    background: #8F4E5C;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+            .fixed-bottom-btn {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: #8F4E5C;
+                color: white;
+                padding: 12px 22px;
+                border: none;
+                border-radius: 8px;
+                font-size: 18px;
+                font-weight: bold;
+                cursor: pointer;
+                z-index: 1000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sticky-top-btn">
+            <span>👜Ebay</span>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search products">
+        <button>Search</button>
+    </div>
+        </div>
+
+
+        <form action="/Buy Now" method="post"></form>
+        <h1 id="mainTitle">Christmas SALE!!</h1>
+        <h1 id="mainTitle">Exclusively on 11th DECEMBER!!</h1>
+
+        <div class="container1">
+            <div class="card">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgvxWuqGbZexkhobbOukmsVgsWUQVmoBQbeQ&s" style="position:absolute;">
+                </div>
+                <br>
+                <h2><b><u>Trinity ChristmasTree–Pink</u></b></h2>
+                <p style="color: palevioletred;"><b><i><em>%40-OFF</em></i></b></p>
+                <h3><del>$50<sup>26</sup></del> $45<sup>25</sup></h3>
+                <a href="#"><em><small>Home and Living|PinkGold Glass|Ribbed Tall Candle Holder|With Stand.Illuminate your space...</small></em></a><br>
+                <a href="#"><button class="buy">Buy Now</button><br></a>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="https://homelightsdirect.co.uk/cdn/shop/files/HE2525-main_medium.jpg?v=1743670568" style="position:absolute;right:30px;">
+                </div>
+                <br>
+                <h2><b><u>Gold Glass Ribbed Candle Holder</u></b></h2>
+                <p style="color: palevioletred;"><b><i><em>%40-OFF</em></i></b></p>
+                <h3><del>$150<sup>55</sup></del> $135<sup>15</sup></h3>
+                <a href="#"><em><small>Home and Living|PinkGold Glass|Ribbed Tall Candle Holder|With Stand.Illuminate your space...</small></em></a><br>
+                <a href="#"><button class="buy">Buy Now</button><br></a>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="https://i.pinimg.com/736x/fb/41/f1/fb41f13d03940ea2b2c87c5a23868aeb.jpg" style="width:299px;height:230px;display:block;margin:0 auto;border-radius:10px;position:absolute;right:1px;object-fit:cover;">
+                </div>
+                <br>
+                <h2><b><u>Fairy Lamp Candle Holder</u></b></h2>
+                <p style="color: palevioletred;"><b><i><em>%40-OFF</em></i></b></p>
+                <h3><del>$80<sup>09</sup></del> $65<sup>29</sup></h3>
+                <a href="#"><em><small>Home and Living|PinkGold Glass|Ribbed Tall Candle Holder|With Stand.Illuminate your space...</small></em></a><br>
+                <a href="#"><button class="buy">Buy Now</button></a>
+                <br>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTElnNtuX3EEk7lJNAux44GgmZSAWhz3TXaLA&s">
+                </div>
+                <br>
+                <h2><b><u>Pink Chritmas Ornaments</u></b></h2>
+                <p style="color: palevioletred;"><b><i><em>%40-OFF</em></i></b></p>
+                <h3><del>$80<sup>09</sup></del> $65<sup>29</sup></h3>
+                <a href="#"><em><small>Home and Living|PinkGold Glass|Ribbed Tall Candle Holder|With Stand.Illuminate your space...</small></em></a><br>
+                <a href="#"><button class="buy">Buy Now</button></a>
+                <br>
+            </div>
+        </div>
+
+        <div class="container1">
+            <div class="card">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgvxWuqGbZexkhobbOukmsVgsWUQVmoBQbeQ&s" style="position:absolute;">
+                </div>
+                <br>
+                <h2><b><u>Trinity ChristmasTree–Pink</u></b></h2>
+                <p style="color: palevioletred;"><b><i><em>%40-OFF</em></i></b></p>
+                <h3><del>$50<sup>26</sup></del> $45<sup>25</sup></h3>
+                <a href="#"><em><small>Home and Living|PinkGold Glass|Ribbed Tall Candle Holder|With Stand.Illuminate your space...</small></em></a><br>
+                <a href="#"><button class="buy">Buy Now</button><br></a>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="https://homelightsdirect.co.uk/cdn/shop/files/HE2525-main_medium.jpg?v=1743670568" style="position:absolute;right:30px;">
+                </div>
+                <br>
+                <h2><b><u>Gold Glass Ribbed Candle Holder</u></b></h2>
+                <p style="color: palevioletred;"><b><i><em>%40-OFF</em></i></b></p>
+                <h3><del>$150<sup>55</sup></del> $135<sup>15</sup></h3>
+                <a href="#"><em><small>Home and Living|PinkGold Glass|Ribbed Tall Candle Holder|With Stand.Illuminate your space...</small></em></a><br>
+                <a href="#"><button class="buy">Buy Now</button><br></a>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="https://i.pinimg.com/736x/fb/41/f1/fb41f13d03940ea2b2c87c5a23868aeb.jpg" style="width:299px;height:230px;display:block;margin:0 auto;border-radius:10px;position:absolute;right:1px;object-fit:cover;">
+                </div>
+                <br>
+                <h2><b><u>Fairy Lamp Candle Holder</u></b></h2>
+                <p style="color: palevioletred;"><b><i><em>%40-OFF</em></i></b></p>
+                <h3><del>$80<sup>09</sup></del> $65<sup>29</sup></h3>
+                <a href="#"><em><small>Home and Living|PinkGold Glass|Ribbed Tall Candle Holder|With Stand.Illuminate your space...</small></em></a><br>
+                <a href="#"><button class="buy">Buy Now</button></a>
+                <br>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTElnNtuX3EEk7lJNAux44GgmZSAWhz3TXaLA&s">
+                </div>
+                <br>
+                <h2><b><u>Pink Chritmas Ornaments</u></b></h2>
+                <p style="color: palevioletred;"><b><i><em>%40-OFF</em></i></b></p>
+                <h3><del>$80<sup>09</sup></del> $65<sup>29</sup></h3>
+                <a href="#"><em><small>Home and Living|PinkGold Glass|Ribbed Tall Candle Holder|With Stand.Illuminate your space...</small></em></a><br>
+                <a href="#"><button class="buy">Buy Now</button></a>
+                <br>
+            </div>
+        </div>
+
+        <button class="fixed-bottom-btn">🛒</button>
+        <center>
+        <footer>
+             <p>&copy; 2025 👜Ebay. All rights reserved.</p>
+        </footer>
+        </center>
+    </body>
+</html>
